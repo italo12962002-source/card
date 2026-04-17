@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body{
+            background: linear-gradient(-100deg, #7f86e9, #ffffff, #1e1af8);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #5f7bf7;
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(0, 0, 0);
+            color: #000000;
         }
+        @keyframes gradientBG{
+            0%{background-position: 0% 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0% 50%;}
+        }
+
         .card{
             background-color: white;
             padding: 20px;
@@ -54,9 +62,12 @@
             gap: 10px;
         }
         .btn{
+            color: black;
+            background-color: rgba(184, 184, 184, 0.356);
+            text-decoration: none;
             padding: 10px 10px;
             border-radius: 6px;
-            border: 2px solid rgb(2, 7, 255);
+            border: 2px solid rgb(18, 21, 196);
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
@@ -75,7 +86,7 @@
             gap: 8px;
         }
         .tag{
-            border: 1px solid #0d23eb;
+            border: 1px solid #283cf3;
             padding: 5px 10px;
         }
         .social-midia{
@@ -90,8 +101,16 @@
             transition: 0.1s;
         }
         .social-midia i:hover{
-            color: #1d56f3;
+            color: #a509ff;
             transform: scale(1.1);
+        }
+        .social-midia a{
+            text-decoration: none;
+            color: rgb(111, 95, 255)
+        }
+        .social-midia a:hover{
+            color: #0d23eb;
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -103,8 +122,8 @@
         <div class="job">Técnico em Informática - SENAC<br>Bacharel em Administração - UFMG</div>
          
         <div class="botoes">
-            <button class="btn primario">Mensagem</button>
-            <button class="btn secundario">Follow</button>
+            <a href="https://wa.me/5538988010940" class="btn primario"> Mensagem</a>
+            <a href="https://instagram.com/italo_samueel" class="btn secundario">Follow</a>
         </div>
          <div class="skills">
             <h3>Habilidades</h3>
@@ -122,10 +141,9 @@
 
          </div>
          <div class="social-midia">
-            <i class="fab - fa-facebook"></i>
-            <i class="fab - fa-github"></i>
-            <i class="fab - fa-linkedin"></i>
-            <i class="fab - fa-instagram"></i>
+            <a href="https://github.com/italo12962002-source"><i class="fab - fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/italo-samuel-360a00372/"><i  class="fab - fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/italo_samueel/"><i class="fab - fa-instagram"></i></a>
          </div>
     </div>
     
